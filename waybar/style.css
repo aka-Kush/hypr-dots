@@ -63,3 +63,8 @@ window#waybar {
     color: #838ba7;
   }
 
+  #custom-838ba7 {
+    color: #7F7CC4;
+    margin: 0 5px;
+  }
+

@@ -7,8 +7,7 @@
     "background-color": "rgba(1,1,1,1)",
     
 
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["hyprland/window"],
+    "modules-left": ["hyprland/workspaces","custom/separator","hyprland/window"],
     "modules-right": ["pulseaudio", "backlight", "battery", "clock", "tray"],
 
     "colors_cat": {
@@ -69,5 +68,11 @@
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "on-click": "pavucontrol"
+    },
+
+    "custom/separator": {
+        "format": "|",
+        "interval": "once",
+        "tooltip": false
     }
 }
