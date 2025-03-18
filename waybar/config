@@ -1,0 +1,73 @@
+
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 10,
+    "spacing" : 10,
+    "background-color": "rgba(1,1,1,1)",
+    
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["pulseaudio", "backlight", "battery", "clock", "tray"],
+
+    "colors_cat": {
+        "background": "#E5D9B6",  // Latte
+        "foreground": "#3B2F25",  // Mocha (Primary Text)
+        "active": "#9E7F51",      // Macchiato (Accent Color)
+        "inactive": "#6E4F3B",    // Frappe (Darker Background)
+        "urgent": "#F4D0A1",      // Rosewater (Light Highlight)
+        "blue": "#7F7CC4"         // Blue (Secondary Accent)
+    },
+
+    "colors_gruv": {
+        "background": "#282828",  // Dark Background
+        "foreground": "#D5C4A1",  // Light Background
+        "active": "#FB4934",      // Accent Red
+        "inactive": "#8EC07C",    // Accent Green
+        "urgent": "#FABD2F",      // Accent Yellow
+        "blue": "#83A598"         // Accent Blue
+    },
+
+    "background": "#E5D9B6",
+
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10,
+        "background": "#E5D9B6"
+    },
+    "clock": {
+        "format": "  {:%I:%M }",
+        "format-alt": "{:%Y-%m-%d}"
+      
+    },
+    "backlight": {
+        "format": " {percent}% ",
+        "format-icons": ["", ""],
+        "background": "#E5D9B6"
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 20,
+            "critical": 11
+        },
+	"critical-level": 9,
+	"on-critical": "notify-send 'Battery Low' 'Battery Level is below 15%!' -u critical",
+        "format": "{icon}  {capacity}% ",
+        "format-charging": " {capacity}%",
+        "format-plugged": "{capacity}%",
+        "format-alt": "{time} ",
+        "format-icons": ["","","","",""]
+    },
+    "pulseaudio": {
+        "scroll-step": 1,
+        "format": "  {volume}%  {format_source}",
+        "format-bluetooth": "{volume}%  {format_source}",
+        "format-bluetooth-muted": " {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "on-click": "pavucontrol"
+    }
+}
