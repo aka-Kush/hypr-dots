@@ -63,8 +63,15 @@ window#waybar {
     color: #838ba7;
   }
 
-  #custom-838ba7 {
-    color: #7F7CC4;
+  #custom-power{
+    color: #e64553;
+    font-weight: bold;
     margin: 0 5px;
+    font-size: 1.2rem;
   }
-
+ 
+  #custom-arch{
+    font-weight: bold;
+    margin: 0 5px;
+    font-size: 1.3rem;
+  } 

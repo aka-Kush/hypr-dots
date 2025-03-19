@@ -7,8 +7,8 @@
     "background-color": "rgba(1,1,1,1)",
     
 
-    "modules-left": ["hyprland/workspaces","custom/separator","hyprland/window"],
-    "modules-right": ["pulseaudio", "backlight", "battery", "clock", "tray"],
+    "modules-left": ["custom/arch","hyprland/workspaces","custom/separator","hyprland/window"],
+    "modules-right": ["pulseaudio", "backlight", "battery", "clock", "tray","custom/power"],
 
     "colors_cat": {
         "background": "#E5D9B6",  // Latte
@@ -74,5 +74,20 @@
         "format": "|",
         "interval": "once",
         "tooltip": false
+    },
+
+   "custom/power": {
+        "format": "",
+        "interval": "once",
+        "tooltip": false,
+	"on-click": "wlogout"
+    },
+
+  "custom/arch": {
+        "format": "",
+        "interval": "once",
+        "tooltip": false,
+	"on-click": "wofi --show drun"
     }
+
 }
