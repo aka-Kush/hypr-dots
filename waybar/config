@@ -42,9 +42,9 @@
         "format-icons": ["","","","",""]
     },
     "pulseaudio": {
-        "scroll-step": 1,
+        "scroll-step": 5,
         "format": "  {volume}%  {format_source}",
-        "format-bluetooth": "{volume}%  {format_source}",
+        "format-bluetooth": " {volume}%  {format_source}",
         "format-bluetooth-muted": " {format_source}",
         "format-muted": " {format_source}",
         "format-source": "{volume}% ",
