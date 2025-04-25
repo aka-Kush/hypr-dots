@@ -1,0 +1,20 @@
+[general]
+font = JetBrainsMono Nerd Font 12
+show-icons = true
+
+[colors]
+background = #2E3440
+foreground = #D8DEE9
+highlight = #81A1C1
+highlighted-background = #3B4252
+selected-background = #5E81AC
+selected-foreground = #D8DEE9
+
+[window]
+width = 800
+height = 500
+border-radius = 0
+
+[behavior]
+line-height = 42
+
