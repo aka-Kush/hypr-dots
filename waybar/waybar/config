@@ -1,0 +1,75 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 10,
+    "spacing": 10,
+    "background-color": "rgba(40,40,40,1)",
+
+    "modules-left": ["custom/arch", "hyprland/workspaces", "custom/separator", "hyprland/window"],
+    "modules-right": ["pulseaudio", "backlight", "battery", "clock", "tray", "custom/power"],
+
+    "background": "#282828",
+
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10,
+        "background": "#282828"
+    },
+
+    "clock": {
+        "format": "  {:%I:%M }",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+
+    "backlight": {
+        "format": " {percent}% ",
+        "format-icons": ["", ""],
+        "background": "#282828"
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 20,
+            "critical": 11
+        },
+        "critical-level": 9,
+        "on-critical": "notify-send 'Battery Low' 'Battery Level is below 15%!' -u critical",
+        "format": "{icon}  {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": "{capacity}%",
+        "format-alt": "{time} ",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "pulseaudio": {
+        "scroll-step": 5,
+        "format": "  {volume}%  {format_source}",
+        "format-bluetooth": " {volume}%  {format_source}",
+        "format-bluetooth-muted": " {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "on-click": "pavucontrol"
+    },
+
+    "custom/separator": {
+        "format": "|",
+        "interval": "once",
+        "tooltip": false
+    },
+
+    "custom/power": {
+        "format": "",
+        "interval": "once",
+        "tooltip": false,
+        "on-click": "wlogout"
+    },
+
+    "custom/arch": {
+        "format": "",
+        "interval": "once",
+        "tooltip": false,
+        "on-click": "wofi --show drun"
+    }
+}
